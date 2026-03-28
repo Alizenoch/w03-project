@@ -10,7 +10,7 @@ const getAllUsers = async (req, res) => {
   }
 };
 
-// GET /users/:id - Get one user by ID
+// GET /users/:id - Get one user by id
 const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
